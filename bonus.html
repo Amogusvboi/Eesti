@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Eesti.trip</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+  		<link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Marvel&display=swap" rel="stylesheet">		
+	</head>
+	<body>
+		<style>
+			h1{
+				font-family: 'Aldrich', sans-serif;
+				color: azure;
+				text-align: center;
+				font-size: 50px;
+				padding: 20px;
+				padding-bottom: 100px;
+			}
+			.topnav{
+				align-content: center;
+			}
+			.navbar{
+				padding-right: 240px;
+				color: aliceblue;
+			}
+			.navbar .navbar-brand{
+				color: aliceblue;
+				margin-left: 150px;
+			}
+			.navbar .nav-link{
+				color: aliceblue;
+				font-weight: 600;
+				margin-left: 20px;
+				font-size: 14px;
+			}
+			.navbar-nav .nav-link.active {
+				color: #ffffff;
+  				border-bottom: 3px solid #fdfdfd;
+			}
+			.custom-container{
+				height: 300px;
+            }
+            .video-container{
+                display: flex;
+                justify-content: center;
+            }
+            .video-container iframe{
+                margin-top: 100px;
+            }
+			
+		</style>
+		<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top" id="navbar";>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#" style="padding-left: 150px; font-family: 'Aldrich', sans-serif;">Eesti.trip</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+				  <li class="nav-item">
+					<a class="nav-link" href="index.html">HOME</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="tartu.html">TARTU</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="practice2.html">PRACTICE</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active" href="bonus.html">BONUS</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+		  <script>
+			window.addEventListener('scroll', function() {
+			  var navbar = document.getElementById('navbar');
+			  if (window.pageYOffset > 0) {
+				navbar.classList.add('navbar-scrolled');
+			  } else {
+				navbar.classList.remove('navbar-scrolled');
+				
+			  }
+			});
+		  </script>
+		  
+		  <style>
+			.navbar-scrolled {
+			  background-color: rgb(255, 255, 255) !important;
+			  transition: background-color 0.5s ease-in-out;
+			  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			}
+			.navbar-scrolled .nav-link{
+				color: #03A9F4;
+			}
+			.navbar-scrolled .navbar-brand{
+				color: black;
+			}
+			.navbar-scrolled .nav-link.active{
+				color: #005d88;
+				border-bottom: 3px solid #005d88;
+			}
+			.custom-container h1{
+				align-items: center;
+				padding: 110px;
+			}
+
+		  </style>
+
+
+		<div class="container-fluid custom-container" style="background-image: linear-gradient(to bottom right, #3de7fd, #b32fff);">
+			<h1>BONUS</h1>
+		</div>
+        <div class="video-container">
+            <iframe width="840" height="472" src="https://www.youtube.com/embed/GYwOwIqOT1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>		
+	</body>
+</html>

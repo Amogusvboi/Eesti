@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Eesti.trip</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+  		<link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Marvel&display=swap" rel="stylesheet">		
+	</head>
+	<body>
+		<style>
+			h1{
+				font-family: 'Aldrich', sans-serif;
+				color: azure;
+				text-align: center;
+				font-size: 50px;
+				padding: 20px;
+				padding-bottom: 100px;
+			}
+			.topnav{
+				align-content: center;
+			}
+			.navbar{
+				padding-right: 240px;
+				color: aliceblue;
+			}
+			.navbar .navbar-brand{
+				color: aliceblue;
+				margin-left: 150px;
+			}
+			.navbar .nav-link{
+				color: aliceblue;
+				font-weight: 600;
+				margin-left: 20px;
+				font-size: 14px;
+			}
+			.navbar-nav .nav-link.active {
+				color: #ffffff;
+  				border-bottom: 3px solid #fdfdfd;
+			}
+			.custom-container{
+				height: 300px;
+				
+			}
+			.custom-container2{
+				padding: 50px;
+				padding-left: 250px;
+				padding-right: 250px;
+                margin-top: 100px;
+			}
+			.custom-container2 h1{
+				color: #984CE8;
+				padding-bottom: 100px;
+				
+			}
+			.custom-container2 h4{
+				text-align: center;
+				color: #984CE8;
+				font-size: 45px;
+				font-weight: 500;
+				padding-top: 40px;
+                padding-bottom: 30px;
+			}
+			.custom-container2 li{
+				font-family: 'Marvel', sans-serif;
+				color: #555555;
+				font-size: 21px;
+				text-align: left;
+				padding-top: 20px;
+			}
+			.custom-container2 p{
+				font-family: 'Marvel', sans-serif;
+				color: #555555;
+				font-size: 25px;
+				text-align: center;
+				padding-top: 20px;
+			}
+			.image-container {
+  				text-align: center;
+				margin-bottom: 200px;
+			}
+			
+		</style>
+		<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top" id="navbar";>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#" style="padding-left: 150px; font-family: 'Aldrich', sans-serif;">Eesti.trip</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+				  <li class="nav-item">
+					<a class="nav-link" href="index.html">HOME</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="tartu.html">TARTU</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active" href="practice2.html">PRACTICE</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="bonus.html">BONUS</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+		  <script>
+			window.addEventListener('scroll', function() {
+			  var navbar = document.getElementById('navbar');
+			  if (window.pageYOffset > 0) {
+				navbar.classList.add('navbar-scrolled');
+			  } else {
+				navbar.classList.remove('navbar-scrolled');
+				
+			  }
+			});
+		  </script>
+		  
+		  <style>
+			.navbar-scrolled {
+			  background-color: rgb(255, 255, 255) !important;
+			  transition: background-color 0.5s ease-in-out;
+			  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			}
+			.navbar-scrolled .nav-link{
+				color: #03A9F4;
+			}
+			.navbar-scrolled .navbar-brand{
+				color: black;
+			}
+			.navbar-scrolled .nav-link.active{
+				color: #005d88;
+				border-bottom: 3px solid #005d88;
+			}
+			.custom-container h1{
+				align-items: center;
+				padding: 110px;
+			}
+
+		  </style>
+
+
+		<div class="container-fluid custom-container" style="background-image: linear-gradient(to bottom right, #3de7fd, #b32fff);">
+			<h1>My practice</h1>
+		</div>
+        <div class="container-fluid custom-container2">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="image-container">
+                        <img src="server.png" alt="Server" width="480" height="720">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h4>Back-end part:</h4>
+                    <ul>
+                        <li>At first we plugged in ssd, connected power and made physical server 
+                        work. I found out about raid controller and how server works from inside.</li>
+                        <li>After getting server to work, I installed Proxmox VE(Virtual environmet).
+                        Then, it came to IP-configuration, so I created a local network and putted
+                        my virtual environment into it, so my future server could be available in 
+                        that loacl network.</li>
+                        <li>Next step was installing operating system. We used remote controll to install
+                        and set up 'Ubuntu server' operating system. Then, it came to IP-configuration
+                        again, but for server that time.</li>
+                        <li>Last crutial part was setting up LAMP stack, which stays for Linux Apache 
+                        MySql PHP configuration for web server. Then we run a website and it end up in 
+                        front-end practice</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="image-container">
+                        <img src="front_end.png" alt="front-end" width="480" height="720">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h4>Front-end part:</h4>
+                    <ul>
+                        <li>I started my front-end with making a scetch in figma online editor.</li>
+                        <li>After, I started to copy my figma design into Wordpress editor, using 
+                        plugins such as Calibri and Elementor</li>
+                        <li>After I got my website ready and functioning using Wordpress, I stated to 
+                        copy figma design using html/CSS combination</li>
+                    </ul>
+                </div>
+            </div>
+			<h4>Conclusion</h4>
+			<p>
+				During that practice I learned a lot about website. Now I
+				 know how to set up a server on a physical server, how to 
+				 create interface of website using WordPress, learned a lot
+				 bout Ubuntu server OS and how to create website by just
+				coding using HTML and CSS programming languages. That is
+				extremely useful experience for me. And also I want to 
+				mention that Estonia is a beautiful with rich culture and
+				 good people. I’m certain now that creating projects from
+				 zero is the most effective way of learning something! 
+			</p>
+
+
+        </div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>		
+	</body>
+</html>
